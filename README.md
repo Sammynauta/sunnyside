@@ -1,3 +1,29 @@
+<h1 align="center"> SUNNYSIDE FRONTENDMENTOR </h1>
+
+
+<img src='src/assets/slide1.png'>
+
+<hr>
+
+# Sobre O Desafio
+- NIVEL DO DESAFIO: JUNIOR
+- projeto pessoal feito para testar meus conhecimentos em react.js e aprimorar minhas habilidades adquiridas.
+
+- Os usuários devem ser capazes de:
+
+    Visualize o layout ideal para o site, dependendo do tamanho da tela do dispositivo
+    Veja os estados de foco para todos os elementos interativos na página.
+<hr>
+
+# RECURSOS 
+
+- GOOGLE FONTS,
+- FONTWEASOME,
+
+<hr>
+
+<img src='src/assets/slide2.png'>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
