@@ -1,0 +1,121 @@
+.header {
+    height: 500px;
+    background-image: url(/src/assets/desktop/image-header.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.title span {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 8px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ladoesquerdo {
+        margin-left: 8px;
+        cursor: pointer;
+}
+
+.ladodireito {
+    margin-right: 16px;
+    
+}
+
+.nav-menu {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.nav-item {
+    margin: 4px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-item:nth-child(4) {
+    background: white;
+    border-radius: 30px;
+    color: black;
+    text-align: center;
+    width: 100px;
+}
+.nav-item:nth-child(4):hover {
+    background: rgba(255, 255, 255, 0.651);
+    border-radius: 30px;
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .nav-menu {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        top: 40px;
+        right: 20px;
+        height: 200px;
+        width: 300px;
+        position: absolute;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-menu.active {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        top: 40px;
+        right: 20px;
+        height: 200px;
+        width: 300px;
+        position: absolute;
+        opacity: 1;
+        transition: 0.3s ease;
+    }
+    .nav-item {
+        text-align: center;
+        color: gray;
+    }
+    .nav-item:nth-child(4) {
+        background:rgb(235, 235, 4);
+        border-radius: 30px;
+        color: black;
+        text-align: center;
+        width: 100px;
+    }
+    .nav-item:nth-child(4):hover {
+        background:rgb(235, 235, 4);
+        color: black;
+        opacity: 0.5;
+       
+    }
+}

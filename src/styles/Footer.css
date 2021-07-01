@@ -1,0 +1,68 @@
+.cards-footer{
+    display: grid;
+    grid-template-areas: ' img1 img2 img3 img4';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.img-1, .img-2, .img-3, .img-4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    background-position: center;
+}
+
+.img-1 {
+    grid-area: img1;
+    background-image: url(/src/assets/desktop/image-gallery-milkbottles.jpg);
+}
+.img-2 {
+    grid-area: img2;
+    background-image: url(/src/assets/desktop/image-gallery-orange.jpg);
+}
+.img-3 {
+    grid-area: img3;
+    background-image: url(/src/assets/desktop/image-gallery-cone.jpg);
+}
+.img-4 {
+  grid-area: img4;
+    background-image: url(/src/assets/desktop/image-gallery-sugarcubes.jpg);
+}
+
+.Footer {
+  background: hsl(168, 43%, 56%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links span {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  margin: 8px;
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons .fab {
+  font-size: 20px;
+  margin: 4px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .cards-footer {
+        grid-template-areas: 'img1 img2'
+        'img3 img4';
+        grid-template-columns: 1fr 1fr;
+    }
+}
